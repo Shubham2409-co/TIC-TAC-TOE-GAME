@@ -1,0 +1,129 @@
+header{
+    text-align: center;
+    font-size: 50px;
+    color:white;
+    font-weight: bolder;
+    padding-top: 20px;
+    
+}
+@media(max-width:427px){
+    header{
+padding-bottom: 30px;
+    }
+}
+
+
+#d1{
+   
+    width: 300px;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+align-content: center;
+padding:50px;
+}
+@media(max-width:427px){
+    #d1{
+
+    height: 150px;
+padding:20px;
+    }
+}
+#b1{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#b2{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#b3{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#b4{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#b5{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#b6{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#b7{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#b8{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#b9{
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    height: 100px;
+    width: 100px;
+    border-top: white;
+    border-left: white;
+    
+}
+#main1{
+    display: flex;
+    justify-content: center;
+   padding-bottom: 40px;
+   
+}
+@media(max-width:427px){
+    #main1{
+        padding-top: 45px;
+    }
+}
+#bo1{
+    background-color: black;
+    
+    
+}
