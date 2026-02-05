@@ -282,13 +282,13 @@ function showWinner() {
     win1.style.fontSize = "22px";
     win1.style.fontWeight = "bold";
 }
-let value;
+let value = 3;
 function win() {
 
     
     if (btn.innerText==="O" && btn2.innerText==="O" && btn3.innerText==="O") {
         btn.style.backgroundColor = btn2.style.backgroundColor = btn3.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner();
         play1()
         return;
@@ -296,7 +296,7 @@ function win() {
 
     if (btn4.innerText==="O" && btn5.innerText==="O" && btn6.innerText==="O") {
         btn4.style.backgroundColor = btn5.style.backgroundColor = btn6.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner();
          play1()
         return;
@@ -304,7 +304,7 @@ function win() {
 
     if (btn7.innerText==="O" && btn8.innerText==="O" && btn9.innerText==="O") {
         btn7.style.backgroundColor = btn8.style.backgroundColor = btn9.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner();
          play1()
         return;
@@ -312,7 +312,7 @@ function win() {
 
     if (btn.innerText==="O" && btn4.innerText==="O" && btn7.innerText==="O") {
         btn.style.backgroundColor = btn4.style.backgroundColor = btn7.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner();
          play1()
         return;
@@ -320,7 +320,7 @@ function win() {
 
     if (btn2.innerText==="O" && btn5.innerText==="O" && btn8.innerText==="O") {
         btn2.style.backgroundColor = btn5.style.backgroundColor = btn8.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner();
          play1()
         return;
@@ -328,7 +328,7 @@ function win() {
 
     if (btn3.innerText==="O" && btn6.innerText==="O" && btn9.innerText==="O") {
         btn3.style.backgroundColor = btn6.style.backgroundColor = btn9.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner();
          play1()
         return;
@@ -336,7 +336,7 @@ function win() {
 
     if (btn.innerText==="O" && btn5.innerText==="O" && btn9.innerText==="O") {
         btn.style.backgroundColor = btn5.style.backgroundColor = btn9.style.backgroundColor = "green";
-       value="true";
+       value=4;
         showWinner();
          play1()
         return;
@@ -344,7 +344,7 @@ function win() {
 
     if (btn7.innerText==="O" && btn5.innerText==="O" && btn3.innerText==="O") {
         btn7.style.backgroundColor = btn5.style.backgroundColor = btn3.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner();
          play1()
         return;
@@ -365,7 +365,7 @@ function win1() {
 
     if (btn.innerText==="X" && btn2.innerText==="X" && btn3.innerText==="X") {
         btn.style.backgroundColor = btn2.style.backgroundColor = btn3.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner1();
          play1()
         return;
@@ -373,7 +373,7 @@ function win1() {
 
     if (btn4.innerText==="X" && btn5.innerText==="X" && btn6.innerText==="X") {
         btn4.style.backgroundColor = btn5.style.backgroundColor = btn6.style.backgroundColor = "green";
-       value="true";
+      value=4;
         showWinner1();
          play1()
         return;
@@ -381,7 +381,7 @@ function win1() {
 
     if (btn7.innerText==="X" && btn8.innerText==="X" && btn9.innerText==="X") {
         btn7.style.backgroundColor = btn8.style.backgroundColor = btn9.style.backgroundColor = "green";
-        value="true";
+      value=4;
         showWinner1();
          play1()
         return;
@@ -389,7 +389,7 @@ function win1() {
 
     if (btn.innerText==="X" && btn4.innerText==="X" && btn7.innerText==="X") {
         btn.style.backgroundColor = btn4.style.backgroundColor = btn7.style.backgroundColor = "green";
-        value="true";
+       value=4;
         showWinner1();
          play1()
         return;
@@ -397,7 +397,7 @@ function win1() {
 
     if (btn2.innerText==="X" && btn5.innerText==="X" && btn8.innerText==="X") {
         btn2.style.backgroundColor = btn5.style.backgroundColor = btn8.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner1();
          play1()
         return;
@@ -405,7 +405,7 @@ function win1() {
 
     if (btn3.innerText==="X" && btn6.innerText==="X" && btn9.innerText==="X") {
         btn3.style.backgroundColor = btn6.style.backgroundColor = btn9.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner1();
          play1()
         return;
@@ -413,7 +413,7 @@ function win1() {
 
     if (btn.innerText==="X" && btn5.innerText==="X" && btn9.innerText==="X") {
         btn.style.backgroundColor = btn5.style.backgroundColor = btn9.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner1();
          play1()
         return;
@@ -421,14 +421,14 @@ function win1() {
 
     if (btn7.innerText==="X" && btn5.innerText==="X" && btn3.innerText==="X") {
         btn7.style.backgroundColor = btn5.style.backgroundColor = btn3.style.backgroundColor = "green";
-        value="true";
+        value=4;
         showWinner1();
          play1()
         return;
     }
 }
 function draw() {
-    if (value!=="true" &&
+    if (value===3 &&
         btn.innerText !== "" &&
         btn2.innerText !== "" &&
         btn3.innerText !== "" &&
@@ -480,7 +480,7 @@ function draw() {
         document.querySelector("#draw").innerText = "";
 
         turn = 0;
- 
+      value = 3;
         
         play2.style.display = "none";
     };
