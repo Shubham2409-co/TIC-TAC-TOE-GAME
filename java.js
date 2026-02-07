@@ -1,8 +1,12 @@
 
+let gameOver = false;
+
 let btn = document.querySelector("#b1");
 let turn = 0;
 
 btn.addEventListener("click", () => {
+    if (gameOver) return;
+
     if (btn.innerText !== "") return;
 
     if (turn === 0) {
@@ -23,9 +27,7 @@ else if(turn===1)
 }
    win();
    win1();
-   if (value !== "true") {
-        draw();
-    }
+   draw();
    
    
 });
@@ -33,6 +35,8 @@ let btn2 = document.querySelector("#b2");
 
 
 btn2.addEventListener("click", () => {
+    if (gameOver) return;
+
     if (btn2.innerText !== "") return;
 
     if (turn === 0) {
@@ -53,9 +57,7 @@ else if(turn===1)
 }
 win();
 win1();
-if (value !== "true") {
-        draw();
-    }
+draw();
 
 });
 
@@ -67,6 +69,8 @@ let btn3 = document.querySelector("#b3");
 
 
 btn3.addEventListener("click", () => {
+    if (gameOver) return;
+
     if (btn3.innerText !== "") return;
 
     if (turn === 0) {
@@ -87,15 +91,15 @@ else if(turn===1)
 }
 win();
 win1();
-if (value !== "true") {
-        draw();
-    }
+draw();
 
 });
 let btn4 = document.querySelector("#b4");
 
 
 btn4.addEventListener("click", () => {
+   if (gameOver) return;
+
     if (btn4.innerText !== "") return;
 
     if (turn === 0) {
@@ -117,9 +121,7 @@ else if(turn===1)
 }
 win();
 win1();
-if (value !== "true") {
-        draw();
-    }
+draw();
 
 });
 
@@ -131,6 +133,8 @@ let btn5 = document.querySelector("#b5");
 
 
 btn5.addEventListener("click", () => {
+    if (gameOver) return;
+
     if (btn5.innerText !== "") return;
 
     if (turn === 0) {
@@ -151,15 +155,15 @@ else if(turn===1)
 }
 win();
 win1();
-if (value !== "true") {
-        draw();
-    }
+draw();
 
 });
 let btn6 = document.querySelector("#b6");
 
 
 btn6.addEventListener("click", () => {
+  if (gameOver) return;
+
     if (btn6.innerText !== "") return;
 
     if (turn === 0) {
@@ -180,9 +184,7 @@ else if(turn===1)
 }
 win();
 win1();
-if (value !== "true") {
-        draw();
-    }
+draw();
 
 });
 
@@ -194,6 +196,8 @@ let btn7 = document.querySelector("#b7");
 
 
 btn7.addEventListener("click", () => {
+    if (gameOver) return;
+
     if (btn7.innerText !== "") return;
 
     if (turn === 0) {
@@ -214,15 +218,15 @@ else if(turn===1)
 }
 win();
 win1();
-if (value !== "true") {
-        draw();
-    }
+draw();
 
 });
 let btn8 = document.querySelector("#b8");
 
 
 btn8.addEventListener("click", () => {
+    if (gameOver) return;
+
     if (btn8.innerText !== "") return;
 
     if (turn === 0) {
@@ -243,13 +247,13 @@ else if(turn===1)
 }
 win();
 win1();
-if (value !== "true") {
-        draw();
-    }
+draw();
 
 });
 let btn9 = document.querySelector("#b9");
 btn9.addEventListener("click", () => {
+    if (gameOver) return;
+
     if (btn9.innerText !== "") return;
 
     if (turn === 0) {
@@ -270,9 +274,7 @@ else if(turn===1)
 }
 win();
 win1();
-if (value !== "true") {
-        draw();
-    }
+draw();
 
 });
 function showWinner() {
@@ -282,7 +284,8 @@ function showWinner() {
     win1.style.fontSize = "22px";
     win1.style.fontWeight = "bold";
 }
-let value = 3;
+let value=3;
+
 function win() {
 
     
@@ -290,6 +293,8 @@ function win() {
         btn.style.backgroundColor = btn2.style.backgroundColor = btn3.style.backgroundColor = "green";
         value=4;
         showWinner();
+        gameOver = true;
+
         play1()
         return;
     }
@@ -297,6 +302,8 @@ function win() {
     if (btn4.innerText==="O" && btn5.innerText==="O" && btn6.innerText==="O") {
         btn4.style.backgroundColor = btn5.style.backgroundColor = btn6.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner();
          play1()
         return;
@@ -305,6 +312,8 @@ function win() {
     if (btn7.innerText==="O" && btn8.innerText==="O" && btn9.innerText==="O") {
         btn7.style.backgroundColor = btn8.style.backgroundColor = btn9.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner();
          play1()
         return;
@@ -313,6 +322,8 @@ function win() {
     if (btn.innerText==="O" && btn4.innerText==="O" && btn7.innerText==="O") {
         btn.style.backgroundColor = btn4.style.backgroundColor = btn7.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner();
          play1()
         return;
@@ -321,6 +332,8 @@ function win() {
     if (btn2.innerText==="O" && btn5.innerText==="O" && btn8.innerText==="O") {
         btn2.style.backgroundColor = btn5.style.backgroundColor = btn8.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner();
          play1()
         return;
@@ -329,6 +342,8 @@ function win() {
     if (btn3.innerText==="O" && btn6.innerText==="O" && btn9.innerText==="O") {
         btn3.style.backgroundColor = btn6.style.backgroundColor = btn9.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner();
          play1()
         return;
@@ -337,6 +352,8 @@ function win() {
     if (btn.innerText==="O" && btn5.innerText==="O" && btn9.innerText==="O") {
         btn.style.backgroundColor = btn5.style.backgroundColor = btn9.style.backgroundColor = "green";
        value=4;
+       gameOver = true;
+
         showWinner();
          play1()
         return;
@@ -345,6 +362,8 @@ function win() {
     if (btn7.innerText==="O" && btn5.innerText==="O" && btn3.innerText==="O") {
         btn7.style.backgroundColor = btn5.style.backgroundColor = btn3.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner();
          play1()
         return;
@@ -366,6 +385,8 @@ function win1() {
     if (btn.innerText==="X" && btn2.innerText==="X" && btn3.innerText==="X") {
         btn.style.backgroundColor = btn2.style.backgroundColor = btn3.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner1();
          play1()
         return;
@@ -374,6 +395,8 @@ function win1() {
     if (btn4.innerText==="X" && btn5.innerText==="X" && btn6.innerText==="X") {
         btn4.style.backgroundColor = btn5.style.backgroundColor = btn6.style.backgroundColor = "green";
       value=4;
+      gameOver = true;
+
         showWinner1();
          play1()
         return;
@@ -382,6 +405,8 @@ function win1() {
     if (btn7.innerText==="X" && btn8.innerText==="X" && btn9.innerText==="X") {
         btn7.style.backgroundColor = btn8.style.backgroundColor = btn9.style.backgroundColor = "green";
       value=4;
+      gameOver = true;
+
         showWinner1();
          play1()
         return;
@@ -390,6 +415,8 @@ function win1() {
     if (btn.innerText==="X" && btn4.innerText==="X" && btn7.innerText==="X") {
         btn.style.backgroundColor = btn4.style.backgroundColor = btn7.style.backgroundColor = "green";
        value=4;
+       gameOver = true;
+
         showWinner1();
          play1()
         return;
@@ -398,6 +425,8 @@ function win1() {
     if (btn2.innerText==="X" && btn5.innerText==="X" && btn8.innerText==="X") {
         btn2.style.backgroundColor = btn5.style.backgroundColor = btn8.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner1();
          play1()
         return;
@@ -406,6 +435,8 @@ function win1() {
     if (btn3.innerText==="X" && btn6.innerText==="X" && btn9.innerText==="X") {
         btn3.style.backgroundColor = btn6.style.backgroundColor = btn9.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner1();
          play1()
         return;
@@ -414,6 +445,8 @@ function win1() {
     if (btn.innerText==="X" && btn5.innerText==="X" && btn9.innerText==="X") {
         btn.style.backgroundColor = btn5.style.backgroundColor = btn9.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner1();
          play1()
         return;
@@ -422,6 +455,8 @@ function win1() {
     if (btn7.innerText==="X" && btn5.innerText==="X" && btn3.innerText==="X") {
         btn7.style.backgroundColor = btn5.style.backgroundColor = btn3.style.backgroundColor = "green";
         value=4;
+        gameOver = true;
+
         showWinner1();
          play1()
         return;
@@ -465,14 +500,14 @@ function draw() {
         btn4.innerText = btn5.innerText = btn6.innerText = "";
         btn7.innerText = btn8.innerText = btn9.innerText = "";
 
-        btn.style.backgroundColor =
-        btn2.style.backgroundColor =
-        btn3.style.backgroundColor =
-        btn4.style.backgroundColor =
-        btn5.style.backgroundColor =
-        btn6.style.backgroundColor =
-        btn7.style.backgroundColor =
-        btn8.style.backgroundColor =
+        btn.style.backgroundColor ="";
+        btn2.style.backgroundColor ="";
+        btn3.style.backgroundColor ="";
+        btn4.style.backgroundColor ="";
+        btn5.style.backgroundColor ="";
+        btn6.style.backgroundColor ="";
+        btn7.style.backgroundColor ="";
+        btn8.style.backgroundColor ="";
         btn9.style.backgroundColor = "";
 
         document.querySelector("#wr").innerText = "";
@@ -481,6 +516,8 @@ function draw() {
 
         turn = 0;
       value = 3;
+      gameOver = false;
+
         
         play2.style.display = "none";
     };
